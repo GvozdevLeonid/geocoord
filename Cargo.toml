@@ -1,0 +1,14 @@
+[package]
+name = "geocoord"
+version = "0.1.0"
+edition = "2024"
+
+[features]
+default = ["serde"]
+serde = ["dep:serde"]
+
+[dependencies]
+serde = { version = "1", optional = true, features = ["derive"] }
+
+[dev-dependencies]
+serde_json = "1"
